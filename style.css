@@ -847,6 +847,7 @@ footer {
         width: 85%;
         height: 33%;
         gap: 0;
+        display: none;
     }
 
     .translucent-window p {
@@ -1036,6 +1037,7 @@ footer {
 
     .separators {
         display: none;
+
     }
 
 
