@@ -1,0 +1,1046 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #022454;
+    color: #479BB1;
+    height: 80px;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+}
+
+header a {
+    color: #479BB1;
+}
+
+.header-container {
+    width: 70%;
+    /* border: solid 3px #00ffff; */
+}
+
+.header-list {
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+    flex-wrap: wrap;
+    /* border: solid 3px #00ffff; */
+}
+
+.header-list li a {
+    text-decoration: none;
+}
+
+.header-container li:hover,
+.header-container a:hover {
+    color: #ffffff;
+}
+
+.header-list li {
+    /* border: solid 3px #00ffff; */
+    width: 110px;
+    text-align: center;
+}
+
+
+/* styles for home part */
+
+.home {
+    height: 100vh;
+    background-image: url(img/children-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home-wrapper {
+    height: 100%;
+    /* border: solid 5px #fff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.CBA-logo-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .CBA-logo-wrapper img {
+    scale: 0.9;
+} */
+
+/* .CBA-logo {
+    height: 100%;
+    width: 60%;
+    background-image: url(../img/cbaLogo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* .translucent-window {
+    height: 30%;
+    width: 40%;
+    /* border: solid 3px #191c31; esto tambien se comenta 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(2, 36, 84, 0.6);
+    border-radius: 10px;
+} */
+
+.translucent-window {
+    /* border: solid 3px #191c31; */
+    height: 35%;
+    width: 35%;
+    display: grid;
+    grid-template-rows: 60% 40%;
+    row-gap: 10px;
+    background-color: rgba(2, 36, 84, 0.6);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.translucent-window p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.home-buttons {
+    /* border: solid 4px #191c31; */
+    width: 40%;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-buttons button {
+    border: none;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: all .3s;
+}
+
+.home-buttons button:hover {
+    color: #368FA7;
+    background-color: rgb(237, 237, 237);
+}
+
+/* courses styles */
+
+.courses {
+    min-height: 95dvh;
+    display: grid;
+    grid-template-rows: 70% 30%;
+
+}
+
+.courses .courses-wrapper {
+    justify-self: center;
+}
+
+.courses-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+}
+
+.courses-content {
+    /* border: solid 3px #191c31; */
+    height: 100%;
+    display: grid;
+    grid-template-rows: 30% 40% 30%;
+    width: 100%;
+}
+
+.courses-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.courses-header h2 {
+    font-size: 35px;
+    color: #353535;
+}
+
+.courses-header p {
+    font-size: large;
+    color: #368fa7;
+    font-weight: bold;
+}
+
+
+.courses-icons ul {
+    list-style: none;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses-icons ul li {
+    /* border: solid 3px #ff0000; */
+    display: grid;
+    grid-template-rows: 80% 20%;
+    height: 100%;
+    width: 200px;
+    align-items: center;
+    gap: 20px;
+}
+
+.courses-icons ul li span {
+    color: #368FA7;
+}
+
+.courses-icons ul li h3 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.courses-icons {
+    display: flex;
+    align-items: center;
+}
+
+.logo-course {
+    height: 100%;
+    width: 100%;
+    /* border: solid 2px #0000ff; */
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    /* border: solid 2px #ff0000; */
+}
+
+.logo-course div {
+    height: 100%;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: solid 2px #00ff00; */
+}
+
+/* 
+#listening {
+    background-image: url(../img/listening.png);
+}
+
+#speaking {
+    background-image: url(../img/speaking.png);
+}
+
+#writing {
+    background-image: url(../img/writing.png);
+}
+
+#reading {
+    background-image: url(../img/reading.png);
+} */
+
+
+.text-courses-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-courses-content p {
+    width: 80%;
+    font-size: 18px;
+    color: #525252;
+}
+
+
+.course-info {
+    display: flex;
+    justify-content: center;
+    background-color: #C7EDF9;
+}
+
+.course-info-wrapper {
+    /* border: solid 3px #ff0000; */
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.course-info-wrapper h2 {
+    padding-bottom: 20px;
+    color: #333333;
+}
+
+.course-info-wrapper ul {
+    list-style: none;
+    display: flex;
+    /* border: solid 3px #00ff00; */
+    height: 15%;
+    width: 50%;
+}
+
+.course-info-wrapper ul li {
+    width: 25%;
+    /* border: solid #0000ff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-info-wrapper ul li i {
+    scale: 1.2;
+}
+
+#pencil2,
+#flag2 {
+    justify-content: flex-start;
+}
+
+#pencil1,
+#pencil2 {
+    color: #C24608;
+}
+
+#flag1,
+#flag2 {
+    color: #2F5FA8;
+}
+
+.course-links {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+.course-links a {
+    font-size: 18px;
+    color: #022454;
+}
+
+.course-links i {
+    scale: 1.3;
+    color: red;
+}
+
+.course-links .link-pen {
+    color: #022454;
+}
+
+.course-links .link-flag {
+    color: #2F5FA8;
+}
+
+.prueba {
+    height: 100vh;
+}
+
+
+/* library styles */
+
+
+.library {
+    height: 60dvh;
+    display: flex;
+    justify-content: center;
+}
+
+.library-wrapper {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 35% 75%;
+    align-items: center;
+}
+
+.image-library-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-library-container img {
+    scale: 0.8;
+}
+
+.library-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #333333;
+    max-width: 75%;
+}
+
+.library-text-container h3 {
+    font-size: 30px;
+}
+
+.library-text-container p a {
+    color: #333333;
+}
+
+.library-text-container p a:hover {
+    color: #368FA7;
+}
+
+
+/* culture styles */
+
+/* linear-gradient(
+        rgba(33, 29, 29, 0.8),
+        rgba(33, 29, 29, 0.8)
+    ),
+    
+    linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+    ),
+    */
+
+.culture {
+    height: 50dvh;
+    display: flex;
+    justify-content: center;
+    background-image: url(img/culture-cba-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.culture::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 50%;
+    background: rgba(30, 30, 30, 0.8);
+    z-index: 10;
+    transition: all .5s;
+}
+
+.culture:hover::before {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* .culture:hover {
+    background-image: url(../img/culture-cba-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
+
+.culture-wrapper {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    /* gap: 50px; */
+    z-index: 20;
+    /* border: solid 3px #00ff00; */
+}
+
+.culture-img-cba {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.culture-img-cba img {
+    scale: 0.8;
+}
+
+.culture-text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.culture-text-content h3 {
+    font-size: 25px;
+}
+
+.culture-text-content p {
+    font-size: 14px;
+    text-align: end;
+}
+
+.culture-text-content button {
+    width: 30%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    border-radius: 7px;
+    color: #022454;
+    background-color: #a5e6fa;
+    transition: all 0.5s;
+}
+
+.culture-text-content button:hover {
+    background-color: #C7EDF9;
+}
+
+
+.edusa {
+    height: 45dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edusa-wrapper {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.edusa-img-wrapper img {
+    scale: 1.2;
+}
+
+.edusa-img-wrapper {
+    justify-self: center;
+}
+
+.edusa-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.edusa-content-text p {
+    font-size: 15px;
+}
+
+.edusa-content-text h3 {
+    font-size: 30px;
+    color: #022454;
+}
+
+
+/* CONTACT STYLES */
+
+
+.contact {
+    background-color: #368CA4;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* border: solid 3px #ff0000; */
+    color: #ffffff;
+    background-color: #368CA4;
+}
+
+.contact-info-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-wrapper span {
+    font-weight: bold;
+}
+
+.contact-info {
+    height: 60%;
+    width: 80%;
+    font-size: 15px;
+}
+
+.contact-info h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.staff {
+    /* border: solid 3px #00ff00; */
+    display: flex;
+    justify-content: center;
+}
+
+.staff-wrapper {
+    /* border: solid 3px #ffff00; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.staff-wrapper h3 {
+    font-size: 23px;
+}
+
+.staff-wrapper ul {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 15px;
+}
+
+
+/* PARTNERS SECTION STYLES */
+
+.partners {
+    height: 22dvh;
+    background-color: #022454;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners-container {
+    /* border: solid 3px #ff0000; */
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.partners-container img {
+    /* border: solid 3px #00ff00; */
+    height: 100%;
+    width: 120px;
+}
+
+.separators {
+    width: 100%;
+    height: 20px;
+
+}
+
+#separator1 {
+    background-color: #ffffff;
+
+}
+
+#separator2 {
+    background-color: #2A3E66;
+}
+
+footer {
+    height: 20dvh;
+    background-color: #022454;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrap {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #3690A8;
+    font-size: small;
+}
+
+.footer-wrap h4 {
+    cursor: text;
+}
+
+
+/* Mission Vission Screen styles section  */
+
+.mission-vision-screen {
+    display: flex;
+    background-color: #D0D7DB;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+    position: fixed;
+    opacity: 0;
+    z-index: -1;
+    transition: 1s;
+    max-width: 100vw;
+}
+
+.mission-vision-screen.active {
+    display: flex;
+    opacity: 1;
+    z-index: 30;
+}
+
+.x-button-container {
+    position: absolute;
+    scale: 2.5;
+    margin-top: 20px;
+    padding-left: 550px;
+}
+
+.fa-xmark {
+    color: #BB4A44;
+    transition: .3s;
+}
+
+.x-button-container i:hover {
+    transform: rotate(90deg);
+}
+
+
+.mission-vision-screen p {
+    color: #555555;
+}
+
+.mv-container {
+    width: 70vw;
+    display: grid;
+    grid-template-rows: 50% 50%;
+
+}
+
+.cba-img-wrapper {
+    align-self: flex-end;
+    justify-self: center;
+}
+
+.cba-img-wrapper img {
+    margin: 50px;
+}
+
+.mv-content-wrapper {
+    /* border: solid 3px #ff0000; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.mv-content-text {
+    /* border: solid 3px #ff0000; */
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mvcba-wrapper {
+    /* Si son mas de una transformacion poner todas en una sola linea y no en dos o mas
+        por que cada linea 'tranform' sobreescribe la anterior por lo que solo se esta 
+        aplicando la ultima linea de 'tranform' y las demas que estan arriba se anulan 
+    transform: rotate(90deg);
+    transform: translateY(350px);*/
+    transform: translateY(350px) rotate(-90deg);
+    transition: 1s;
+}
+
+.mvcba-wrapper.active {
+    transform: translateY(0px) rotate(0deg);
+}
+
+.menu {
+    display: none;
+}
+
+
+/* STYLES TO MAKE IT RESPONSIVE */
+
+@media (max-width: 450px) {
+
+    header {
+        display: none;
+    }
+
+    .home {
+        background-position-x: -500px;
+        background-size: 350%;
+        background-attachment: scroll;
+    }
+
+    /* colocando el icono como pseudoelemento ::before 
+    es necesario coolcar la fuente si solamente se coloca el unicode
+    no aparecera el icono*/
+    /* .home::before {
+        content: '\f0c9';
+        font-family: "FontAwesome";
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px;
+        scale: 1.6;
+    } */
+
+    .menu-icon {
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        scale: 1.6;
+        /* z-index: 30; */
+    }
+
+    .menu {
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        margin-top: 45px;
+        margin-right: 15px;
+        list-style: none;
+        color: #7d7d7d;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        width: 175px;
+        gap: 7px;
+        font-size: 15px;
+        padding: 15px;
+        border: solid 2px;
+        border-radius: 10px;
+        transition: opacity .5s;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #929292;
+    }
+
+    .menu li::selection {
+        border: solid 2px #ff0000;
+    }
+
+    .translucent-window {
+        width: 85%;
+        height: 33%;
+        gap: 0;
+    }
+
+    .translucent-window p {
+        margin-top: 10px;
+    }
+
+    .home-buttons {
+        width: 85%;
+        height: 3.5%;
+    }
+
+    .home-buttons button {
+        font-size: small;
+        width: 45%;
+
+    }
+
+    /* About courses */
+
+    .courses {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        gap: 30px;
+    }
+
+    .courses-wrapper {
+        margin: auto;
+        width: 90%;
+    }
+
+    .courses-content {
+        display: flex;
+        flex-direction: column;
+        /* border: solid; */
+        margin-top: 30px;
+        gap: 25px;
+    }
+
+    .courses-header-tittle {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .courses-content .courses-header .courses-header-tittle h2 {
+        font-size: 19px;
+    }
+    
+    .courses-header p {
+        gap: 20px;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .courses-icons ul {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding-bottom: 15px;
+    }
+
+    .courses-icons ul li {
+        gap: 0;
+    }
+
+    .logo-course {
+        scale: .8;
+    }
+
+    .course-info {
+        padding: 40px 0;
+    }
+
+    .course-info h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .course-links a {
+        font-size: 15px;
+    }
+
+    .course-info-wrapper ul {
+        width: 100%;
+    }
+
+    /* About library */
+
+    .library {
+        min-height: 100vh;
+        height: fit-content;
+        margin-bottom: 100px;
+    }
+
+    .library-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* About Culture */
+
+    .culture::before {
+        height: 75%;
+    }
+
+    .culture {
+        height: 80vh;
+        height: fit-content;
+        margin-bottom: 150px;
+        background-position-x: -350px;
+        background-attachment: scroll;
+    }
+
+    .culture-wrapper {
+        flex-direction: column-reverse;
+        width: 80%;
+    }
+
+    .culture-img-cba{
+        display: flex;
+        justify-content: center;
+        scale: 1.1;
+    }
+
+    .culture-text-content button {
+        width: 45%;
+        height: 35px;
+        font-size: small;
+        margin-bottom: 20px;
+    }
+
+
+    /* Edsusa apart styles */
+
+    .edusa-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 20px;
+        margin-top: -200px;
+        gap: 30px;
+    }
+
+    .edusa-img-wrapper img {
+        scale: 0.9;
+    }
+
+
+    /* CONTACT styles */
+
+    .contact {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 30px;
+    }
+
+    .google-maps-ubi {
+        height: 100vw;
+        width: 100vw;
+    }
+
+    .contact {
+        gap: 40px;
+    }
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    /* PARTNERS apart styles */
+
+    .partners {
+        height: 50vh;
+        height: fit-content;
+    }
+
+    .partners-container{
+        justify-content: center;
+        row-gap: 20px;
+        column-gap: 50px;
+        width: 90%;
+    }
+
+    .separators {
+        display: none;
+    }
+
+
+
+    
+
+
+}
