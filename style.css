@@ -6,7 +6,8 @@
     scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -55,6 +56,10 @@ header a {
 
 
 /* styles for home part */
+
+.menu-icon {
+    opacity: 0;
+}
 
 .home {
     height: 100vh;
@@ -807,6 +812,7 @@ footer {
     } */
 
     .menu-icon {
+        opacity: 1;
         position: absolute;
         right: 0;
         margin: 20px;
@@ -847,7 +853,6 @@ footer {
         width: 85%;
         height: 33%;
         gap: 0;
-        display: none;
     }
 
     .translucent-window p {
@@ -895,7 +900,7 @@ footer {
     .courses-content .courses-header .courses-header-tittle h2 {
         font-size: 19px;
     }
-    
+
     .courses-header p {
         gap: 20px;
         text-align: center;
@@ -951,10 +956,6 @@ footer {
 
     /* About Culture */
 
-    .culture::before {
-        height: 75%;
-    }
-
     .culture {
         height: 80vh;
         height: fit-content;
@@ -963,12 +964,16 @@ footer {
         background-attachment: scroll;
     }
 
+    .culture::before {
+        height: 75vh;
+    }
+
     .culture-wrapper {
         flex-direction: column-reverse;
         width: 80%;
     }
 
-    .culture-img-cba{
+    .culture-img-cba {
         display: flex;
         justify-content: center;
         scale: 1.1;
@@ -1028,7 +1033,7 @@ footer {
         height: fit-content;
     }
 
-    .partners-container{
+    .partners-container {
         justify-content: center;
         row-gap: 20px;
         column-gap: 50px;
@@ -1040,9 +1045,19 @@ footer {
 
     }
 
+    .mission-vision-screen {
+        flex-direction: column;
+        max-width: 100vw;
+        margin-top: 50px;
+        background-attachment: scroll;
+    }
+
+    .mvcba-wrapper {
+        display: none;
+    }
 
 
-    
+
 
 
 }

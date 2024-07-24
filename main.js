@@ -29,11 +29,12 @@ document.getElementById('menu-icon').addEventListener('click', function() {
     }
 } )
 
-document.getElementById('mission-vision-responsive').addEventListener('click', function() {
-    const mvscreen = document.getElementById('mvscreen');
-    mvscreen.style.opacity = '1';
-    mvscreen.style.zIndex = '30';
-})
+// para poner mv screen responsive
+// document.getElementById('mission-vision-responsive').addEventListener('click', function() {
+//     const mvscreen = document.getElementById('mvscreen');
+//     mvscreen.style.opacity = '1';
+//     mvscreen.style.zIndex = '30';
+// })
 
 
 // code to desappear the responsive menu by touching any other part of the home screen
