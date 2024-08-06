@@ -57,7 +57,7 @@ header a {
 
 /* styles for home part */
 
-.menu-icon {
+.menu-icon, .menu-x-button {
     opacity: 0;
 }
 
@@ -678,7 +678,7 @@ footer {
 
 .footer-wrap {
     height: 100%;
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -686,6 +686,7 @@ footer {
     gap: 5px;
     color: #3690A8;
     font-size: small;
+    text-align: center;
 }
 
 .footer-wrap h4 {
@@ -811,14 +812,28 @@ footer {
         scale: 1.6;
     } */
 
-    .menu-icon {
+    .menu-icon, .menu-x-button {
         opacity: 1;
         position: absolute;
         right: 0;
         margin: 20px;
         scale: 1.6;
+        transition: 5s all !important;
         /* z-index: 30; */
     }
+
+
+    .menu-x-button, .menu-icon.active-change {
+        display: none;
+        opacity: 0;
+        /* transform: translateX(100px); */
+        
+    }
+    
+    .menu-icon, .menu-x-button.active-change {
+        /* transform: translateX(0); */
+    }
+
 
     .menu {
         opacity: 0;
@@ -837,7 +852,12 @@ footer {
         padding: 15px;
         border: solid 2px;
         border-radius: 10px;
-        transition: opacity .5s;
+        transition: .5s all !important;
+    }
+
+    .menu.active {
+        opacity: 1;
+        display: flex;
     }
 
     .menu a {
@@ -1042,20 +1062,67 @@ footer {
 
     .separators {
         display: none;
-
     }
 
+
+
     .mission-vision-screen {
+        /* opacity: 1;
+        z-index: 30; */
+        height: 90vh;
         flex-direction: column;
-        max-width: 100vw;
-        margin-top: 50px;
-        background-attachment: scroll;
+        /* position: absolute; */
+        margin-top: 10vh;
+    }
+
+    .mv-container {
+        width: 100%;
+        grid-template-rows: 20% 80%;
+    }
+
+    .mv-content-text {
+        width: 80%;
+        align-self: center;
+    }
+
+    .mv-content-text h2 {
+        font-size: 20px;
+    }
+
+    .mv-content-text p {
+        font-size: 15px;
+    }
+
+    .mv-content-wrapper{
+        flex-direction: column-reverse;
+        
     }
 
     .mvcba-wrapper {
-        display: none;
+        /* display: none; */
+        scale: .8;
+        transform: translate(0);
+        transform: translateY(350px) rotate(-90deg);
     }
 
+    .mvcba-wrapper.active-responsive-animation {
+        transform: translateY(0px) rotate(0);
+    }
+
+    
+    .cba-img-wrapper img {
+        margin: 0px;
+        scale: .8;
+    }
+    
+    .cba-img-wrapper {
+        transition: 1s;
+        transform: translateX(-400px);
+    }
+
+    .cba-img-wrapper.active-responsive-animation {
+        transform: translateX(0);
+    }
 
 
 

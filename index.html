@@ -35,7 +35,7 @@
 
     <div class="mission-vision-screen" id="mvscreen">
         <div class="mv-container">
-            <div class="cba-img-wrapper">
+            <div class="cba-img-wrapper" id="cba-responsive-img">
                 <img src="img/cbaLogo.png" alt="cba-logo">
             </div>
             <div class="mv-content-wrapper">
@@ -63,17 +63,21 @@
 
 
     <div class="home" id="home">
-        <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i>
+        
+            <!-- <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i> -->
+        <i class="menu-icon" id="menu-icon">#</i>
+        <i class="menu-x-button" id="menu-x-button">x</i>
+
         <ul class="menu" id="menu">
-            <li><a href="#home">Inicio</a></li>
-            <!-- <li id="mission-vision-responsive">Mision y vision</li> -->
-            <li><a href="#courses">Cursos</a></li>
-            <li><a href="#library">Biblioteca</a>
-            <li><a href="#culture">Cultura</a></li>
-            <li><a href="#edusa">EducationUSA</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li> <a href="#contact">Contacto</a></li>
-            <li> 
+            <li onclick="closeResponsiveMenu()"><a href="#home">Inicio</a></li>
+            <li id="mission-vision-responsive">Mision y vision</li>
+            <li><a href="#courses" onclick="closeResponsiveMenu()">Cursos</a></li>
+            <li><a href="#library" onclick="closeResponsiveMenu()">Biblioteca</a>
+            <li><a href="#culture" onclick="closeResponsiveMenu()">Cultura</a></li>
+            <li><a href="#edusa" onclick="closeResponsiveMenu()">EducationUSA</a></li>
+            <li><a href="#" onclick="closeResponsiveMenu()">Noticias</a></li>
+            <li> <a href="#contact" onclick="closeResponsiveMenu()">Contacto</a></li>
+            <li onclick="closeResponsiveMenu()"> 
                 <a href="https://www.facebook.com/cbacochabambabnc">
                     <i class="fa-brands fa-facebook"></i>
                     Facebook
