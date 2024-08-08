@@ -789,6 +789,10 @@ footer {
 
 @media (max-width: 450px) {
 
+    html, body {
+        overflow-x: hidden;
+    }
+
     header {
         display: none;
     }
@@ -818,15 +822,24 @@ footer {
         right: 0;
         margin: 20px;
         scale: 1.6;
-        transition: .5s all;
-        /* z-index: 30; */
+        transition: all .5s ease-in;
     }
-
-
+    
     #menu-x-button {
-        display: none;
+        scale: 2;
+        color: #BB4A44;
+        z-index: -1;
+        /* opacity: 0; */
     }
 
+    .menu-x-button.add-transition {
+        transform: translateY(50px);
+        z-index: 30 !important;
+        position: fixed;
+        opacity: 1 ;
+    }
+
+    /* boton X pero del menu normal, no del responsive */
     .x-button-container {
         display: none;
     }
@@ -1097,7 +1110,7 @@ footer {
 
     .mvcba-wrapper {
         /* display: none; */
-        scale: .8;
+        scale: .7;
         transform: translate(0);
         transform: translateY(350px) rotate(-90deg);
     }

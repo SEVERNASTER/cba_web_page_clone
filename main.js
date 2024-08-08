@@ -40,11 +40,15 @@ function changeResponsiveMenuButtons(xBtnIsVisible) {
     const menuIcon = document.getElementById('menu-icon');
     const menuXBtn = document.getElementById('menu-x-button');
     if(xBtnIsVisible){
-        menuXBtn.style.display = 'none';
-        menuIcon.style.display = 'flex';
+        menuXBtn.style.zIndex = '-1';
+        menuXBtn.style.opacity = '0';
+        menuIcon.style.zIndex = '1';
+        menuIcon.style.opacity = '1'
     }else {
-        menuXBtn.style.display = 'flex';
-        menuIcon.style.display = 'none';
+        menuXBtn.style.zIndex = '1';
+        menuXBtn.style.opacity = '1';
+        menuIcon.style.zIndex = '-1';
+        menuIcon.style.opacity = '0'
     }
 }
 
@@ -60,21 +64,28 @@ function showMVScreen(){
     const mvscreen = document.getElementById('mvscreen');
     const mvImg = document.getElementById('mvcba');
     const cbaImg = document.getElementById('cba-responsive-img');
+    const menuXBtn = document.getElementById('menu-x-button');
     menuResponsive.style.opacity = '0';
+    menuResponsive.style.display = 'none'
     mvscreen.style.opacity = '1';
     mvscreen.style.zIndex = '30';
     mvImg.classList.add('active-responsive-animation');
     cbaImg.classList.add('active-responsive-animation');
+    menuXBtn.classList.add('add-transition')
 }
 
 function hideMVScreen(){
     const mvscreen = document.getElementById('mvscreen');
     const mvImg = document.getElementById('mvcba');
     const cbaImg = document.getElementById('cba-responsive-img');
+    const menuXBtn = document.getElementById('menu-x-button')
+    menuResponsive.style.display = 'flex'
     mvscreen.style.opacity = '0';
     mvscreen.style.zIndex = '-1';
+    menuResponsive.style.zIndex = '1';
     mvImg.classList.remove('active-responsive-animation');
     cbaImg.classList.remove('active-responsive-animation');
+    menuXBtn.classList.remove('add-transition')
 }
 
 //el problema es el position: absolute y el transform translate de los icono del menu y x para desaparecer el menu
