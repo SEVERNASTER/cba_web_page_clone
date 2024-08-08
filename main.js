@@ -43,9 +43,8 @@ function changeResponsiveMenuButtons(xBtnIsVisible) {
         menuXBtn.style.display = 'none';
         menuIcon.style.display = 'flex';
     }else {
-        menuIcon.style.display = 'none';
         menuXBtn.style.display = 'flex';
-        menuXBtn.style.opacity = '1';
+        menuIcon.style.display = 'none';
     }
 }
 

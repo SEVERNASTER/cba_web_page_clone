@@ -722,7 +722,7 @@ footer {
     padding-left: 550px;
 }
 
-.fa-xmark {
+#x-button {
     color: #BB4A44;
     transition: .3s;
 }
@@ -818,20 +818,17 @@ footer {
         right: 0;
         margin: 20px;
         scale: 1.6;
-        transition: 5s all !important;
+        transition: .5s all;
         /* z-index: 30; */
     }
 
 
-    .menu-x-button, .menu-icon.active-change {
+    #menu-x-button {
         display: none;
-        opacity: 0;
-        /* transform: translateX(100px); */
-        
     }
-    
-    .menu-icon, .menu-x-button.active-change {
-        /* transform: translateX(0); */
+
+    .x-button-container {
+        display: none;
     }
 
 
@@ -844,7 +841,7 @@ footer {
         list-style: none;
         color: #7d7d7d;
         background-color: #fff;
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 150px;
         gap: 7px;
