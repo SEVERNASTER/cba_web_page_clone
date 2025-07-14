@@ -28,6 +28,12 @@ Este es un clon de la página principal del **Instituto de Inglés CBA** realiza
 
 ---
 
+## 🔗 Página original
+
+Este proyecto es un clon de la página oficial del [Instituto CBA](https://www.cba.edu.bo), realizado únicamente con fines educativos y de práctica personal.
+
+> **Nota:** No tengo ninguna relación con el Instituto CBA. El propósito de este proyecto es practicar maquetado web replicando el diseño de una página existente.
+
 ## 📄 Licencia
 
 Este proyecto fue realizado con fines educativos. **No está afiliado ni relacionado oficialmente con el Instituto CBA.**
