@@ -79,7 +79,7 @@ function hideMVScreen(){
     const mvImg = document.getElementById('mvcba');
     const cbaImg = document.getElementById('cba-responsive-img');
     const menuXBtn = document.getElementById('menu-x-button')
-    menuResponsive.style.display = 'flex'
+    menuResponsive.style.display = 'flex' 
     mvscreen.style.opacity = '0';
     mvscreen.style.zIndex = '-1';
     menuResponsive.style.zIndex = '1';
